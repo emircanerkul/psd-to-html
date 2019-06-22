@@ -1,0 +1,109 @@
+$base-color: #fbad27;
+$seco-color: #757575;
+$text-color: #4a4a4a;
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    height: 600px;
+
+    & .navbar {
+        font-size: 10pt;
+        padding: 20px 0;
+        color: white;
+        border-bottom: solid thin #fff;
+
+        & .menu {
+            list-style: none;
+
+            &>li {
+                float: left;
+                margin: 0 10px 0 0;
+                padding: 5px 8px;
+
+                &>a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        & .phone {
+            &::before {
+                content: "📞";
+                margin-right: 5px;
+                font-size: 12pt;
+            }
+
+            line-height: 31px;
+            text-align: right;
+        }
+    }
+
+    & .title {
+        text-align: center;
+        padding: 50px 0 0 0;
+        font-size: 38pt;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    & .sub-title {
+        text-align: center;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    & .watch-intro {
+        line-height: 1em;
+        position: absolute;
+        left: 100px;
+        bottom: 40px;
+        color: white;
+
+        &>span {
+            display: block;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        &:before {
+            position: absolute;
+            left: -48px;
+            top: -8px;
+            content: "▶";
+            text-align: center;
+            font-size: 18pt;
+            border: solid 3px #fff;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            padding: 2px 0 2px 4px;
+            line-height: 29px;
+        }
+    }
+}
+
+button {
+    background-color: $base-color;
+    border-radius: 20px;
+    padding: 5px 50px;
+    color: white;
+    border: none;
+    line-height: initial;
+    margin: 20px auto;
+
+}
+
+.center {
+    text-align: center;
+}

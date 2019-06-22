@@ -8,6 +8,11 @@ Used: [VSCode](https://code.visualstudio.com/) (Editor), [Photopea](https://www.
 
 Firstly i want to use own grid system instead of ready-to-use grid systems. I developed fully independent non-responsive html template.
 
+### Fusion Travel Agency [preview](https://github.com/emircanerkul/psd-to-html/tree/master/fusion-travel-agency)
+
+In this project i use [skeleton](http://getskeleton.com/) grid system. I'm still working on it.
+
+
 ***#LearningOnTheRoad***
 
 https://raw.githubusercontent.com/emircanerkul/psd-to-html/master/startuprr/preview.png
