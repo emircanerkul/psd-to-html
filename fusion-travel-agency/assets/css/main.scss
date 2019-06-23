@@ -93,6 +93,76 @@ header {
     }
 }
 
+section#action {
+    background-color: $base-color;
+    padding: 50px 0;
+    & .title{
+        color: #fff;
+        font-size: 22pt;
+        text-align: center;
+        padding: 16px 0;
+    }
+}
+
+footer {
+    font-family: 'Roboto Medium', sans-serif;
+    color: $text-color;
+    margin-top: 180px;
+    font-size: 10pt;
+
+    & a {
+        text-decoration: none;
+        color: $text-color;
+    }
+
+    & ul {
+        list-style: none;
+
+        li {
+
+            margin: 0;
+        }
+
+        &.share {
+            li {
+                float: left;
+
+                &>a {
+                    display: block;
+                    background-color: $seco-color;
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    text-align: center;
+                    margin-right: 5px;
+                    border-radius: 50%;
+                    color: #fff;
+
+                    &.active {
+                        background-color: $base-color;
+                    }
+
+                }
+            }
+        }
+    }
+
+    & .title {
+        font-family: 'Roboto';
+        font-size: 12pt;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    & .copy {
+        text-align: center;
+        padding: 40px 0 70px 0;
+        border-top: solid thin #ddd;
+        font-size: 8pt;
+    }
+}
+
+
 button {
     background-color: $base-color;
     border-radius: 20px;
@@ -102,6 +172,9 @@ button {
     line-height: initial;
     margin: 20px auto;
 
+    &.border {
+        border: solid 2px #fff;
+    }
 }
 
 .center {

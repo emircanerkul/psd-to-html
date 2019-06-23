@@ -89,6 +89,72 @@ header .watch-intro:before {
   line-height: 29px;
 }
 
+section#action {
+  background-color: #fbad27;
+  padding: 50px 0;
+}
+
+section#action .title {
+  color: #fff;
+  font-size: 22pt;
+  text-align: center;
+  padding: 16px 0;
+}
+
+footer {
+  font-family: 'Roboto Medium', sans-serif;
+  color: #4a4a4a;
+  margin-top: 180px;
+  font-size: 10pt;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 0;
+}
+
+footer ul.share li {
+  float: left;
+}
+
+footer ul.share li > a {
+  display: block;
+  background-color: #757575;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+footer ul.share li > a.active {
+  background-color: #fbad27;
+}
+
+footer .title {
+  font-family: 'Roboto';
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer .copy {
+  text-align: center;
+  padding: 40px 0 70px 0;
+  border-top: solid thin #ddd;
+  font-size: 8pt;
+}
+
 button {
   background-color: #fbad27;
   border-radius: 20px;
@@ -97,6 +163,10 @@ button {
   border: none;
   line-height: initial;
   margin: 20px auto;
+}
+
+button.border {
+  border: solid 2px #fff;
 }
 
 .center {
