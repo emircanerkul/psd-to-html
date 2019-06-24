@@ -4,6 +4,91 @@ $text-color: #4a4a4a;
 
 * {
     font-family: 'Roboto', sans-serif;
+    color: $text-color;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 24pt;
+}
+
+section {
+    padding: 100px 0;
+
+    &.small {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    & .carousel {
+        padding: 100px 0 50px 0;
+
+        &>.item {
+            padding: 40px 30px;
+            color: $seco-color !important;
+            font-size: 10pt;
+
+            &.active {
+                -webkit-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.1);
+            }
+
+            &>.icon {
+                font-size: 28pt;
+                color: $base-color;
+            }
+
+            &>.title {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    & .pagination {
+        &>ul {
+            list-style: none;
+            width: fit-content;
+            margin: auto;
+
+            &>li {
+                float: left;
+                line-height: 12px;
+                background: $seco-color;
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+
+                &.active {
+                    background: $base-color;
+                    height: 20px;
+                    width: 20px;
+
+                    &::before {
+                        margin: 2px;
+                        height: 12px;
+                        width: 12px;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    margin: 1px;
+                    border: solid 2px #fff;
+                    height: 6px;
+                    width: 6px;
+                    border-radius: 50%;
+                }
+            }
+
+            &>li:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
 header {
@@ -37,14 +122,20 @@ header {
         }
 
         & .phone {
+            color: #fff;
+            line-height: 31px;
+            text-align: right;
+
             &::before {
+                color: #fff;
                 content: "📞";
                 margin-right: 5px;
                 font-size: 12pt;
             }
 
-            line-height: 31px;
-            text-align: right;
+            &>b {
+                color: #fff;
+            }
         }
     }
 
@@ -68,12 +159,13 @@ header {
         position: absolute;
         left: 100px;
         bottom: 40px;
-        color: white;
+        color: #fff;
 
         &>span {
             display: block;
             font-weight: bold;
             text-transform: uppercase;
+            color: #fff;
         }
 
         &:before {
@@ -96,7 +188,8 @@ header {
 section#action {
     background-color: $base-color;
     padding: 50px 0;
-    & .title{
+
+    & .title {
         color: #fff;
         font-size: 22pt;
         text-align: center;
