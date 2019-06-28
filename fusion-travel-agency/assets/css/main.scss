@@ -13,6 +13,11 @@ h1 {
     font-size: 24pt;
 }
 
+p {
+    font-size: 10pt;
+    color: $seco-color;
+}
+
 section {
     padding: 100px 0;
 
@@ -47,6 +52,46 @@ section {
         }
     }
 
+    & .search {
+        font-size: 12pt;
+        margin-top: 40px;
+        border: none;
+        width: 80px;
+    }
+
+    & .gallery {
+        &>.item {
+            position: relative;
+            overflow: hidden;
+            max-height: 250px;
+            margin-top: 30px;
+
+            &>.title {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 15px auto;
+                color: white;
+                font-size: 14pt;
+                font-weight: bold;
+                text-align: center;
+                text-shadow: #000000aa 2px 2px 8px;
+            }
+
+            &>img {
+                display: block;
+                margin: auto;
+
+                height: auto;
+                max-height: 100%;
+
+                width: auto;
+                max-width: 100%;
+            }
+        }
+    }
+
     & .pagination {
         &>ul {
             list-style: none;
@@ -54,6 +99,7 @@ section {
             margin: auto;
 
             &>li {
+                position: relative;
                 float: left;
                 line-height: 12px;
                 background: $seco-color;
@@ -67,9 +113,11 @@ section {
                     width: 20px;
 
                     &::before {
-                        margin: 2px;
+                        margin: 2px auto;
                         height: 12px;
                         width: 12px;
+                        left: 0;
+                        right: 0;
                     }
                 }
 
@@ -81,6 +129,8 @@ section {
                     height: 6px;
                     width: 6px;
                     border-radius: 50%;
+                    left: 0;
+                    right: 0;
                 }
             }
 
@@ -96,7 +146,7 @@ header {
     background-image: url('../img/header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: left bottom;
 
     height: 600px;
 
@@ -217,6 +267,8 @@ footer {
         }
 
         &.share {
+            display: inline-block;
+
             li {
                 float: left;
 
@@ -272,4 +324,51 @@ button {
 
 .center {
     text-align: center;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 550px) {
+    .container {
+        text-align: center;
+    }
+
+    .columns {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        width: 100%;
+        display: block;
+    }
+
+    .navbar {
+        padding-bottom: 0 !important;
+    }
+
+    section .carousel {
+        padding: 0;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    pre,
+    blockquote,
+    dl,
+    figure,
+    table,
+    p,
+    ul,
+    ol,
+    form {
+        margin-bottom: 0;
+    }
 }

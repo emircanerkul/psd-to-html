@@ -10,6 +10,11 @@ h1 {
   font-size: 24pt;
 }
 
+p {
+  font-size: 10pt;
+  color: #757575;
+}
+
 section {
   padding: 100px 0;
 }
@@ -44,6 +49,42 @@ section .carousel > .item > .title {
   margin-bottom: 10px;
 }
 
+section .search {
+  font-size: 12pt;
+  margin-top: 40px;
+  border: none;
+  width: 80px;
+}
+
+section .gallery > .item {
+  position: relative;
+  overflow: hidden;
+  max-height: 250px;
+  margin-top: 30px;
+}
+
+section .gallery > .item > .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 15px auto;
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: #000000aa 2px 2px 8px;
+}
+
+section .gallery > .item > img {
+  display: block;
+  margin: auto;
+  height: auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
 section .pagination > ul {
   list-style: none;
   width: -webkit-fit-content;
@@ -53,6 +94,7 @@ section .pagination > ul {
 }
 
 section .pagination > ul > li {
+  position: relative;
   float: left;
   line-height: 12px;
   background: #757575;
@@ -68,9 +110,11 @@ section .pagination > ul > li.active {
 }
 
 section .pagination > ul > li.active::before {
-  margin: 2px;
+  margin: 2px auto;
   height: 12px;
   width: 12px;
+  left: 0;
+  right: 0;
 }
 
 section .pagination > ul > li::before {
@@ -81,6 +125,8 @@ section .pagination > ul > li::before {
   height: 6px;
   width: 6px;
   border-radius: 50%;
+  left: 0;
+  right: 0;
 }
 
 section .pagination > ul > li:not(:first-child) {
@@ -92,7 +138,7 @@ header {
   background-image: url("../img/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: left bottom;
   height: 600px;
 }
 
@@ -212,6 +258,10 @@ footer ul li {
   margin: 0;
 }
 
+footer ul.share {
+  display: inline-block;
+}
+
 footer ul.share li {
   float: left;
 }
@@ -262,5 +312,45 @@ button.border {
 
 .center {
   text-align: center;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .container {
+    text-align: center;
+  }
+  .columns {
+    margin-bottom: 20px;
+  }
+  .menu {
+    display: none;
+  }
+  .mobile-menu {
+    width: 100%;
+    display: block;
+  }
+  .navbar {
+    padding-bottom: 0 !important;
+  }
+  section .carousel {
+    padding: 0;
+  }
+  footer {
+    margin-top: 50px;
+  }
+  pre,
+  blockquote,
+  dl,
+  figure,
+  table,
+  p,
+  ul,
+  ol,
+  form {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
