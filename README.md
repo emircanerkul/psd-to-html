@@ -12,5 +12,8 @@ Firstly i want to use own grid system instead of ready-to-use grid systems. I de
 
 I developed fully responsive html template with [skeleton](http://getskeleton.com/) grid system.
 
+### Minimo Blog [preview](https://github.com/emircanerkul/psd-to-html/tree/master/minimo)
+
+I aimed to use different technologies at every stage of this project for my education and portfolio. At this stage of the project, I converted the minimo psd design to responsive html template using [sass](https://sass-lang.com/), [neat](https://neat.bourbon.io/) and [icomoon](https://icomoon.io/).
 
 ***#LearningOnTheRoad***
