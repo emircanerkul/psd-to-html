@@ -1,0 +1,370 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #4a4a4a;
+}
+
+a.button.default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #10c9c3;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  font-size: 12px;
+}
+
+a.button.circular {
+  -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+          box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  background-color: #10c9c3;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+}
+
+a.button.circular span {
+  text-align: center;
+}
+
+header {
+  background-color: #e9e9e9;
+  padding: 40px 0;
+}
+
+header .logo {
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  background-image: url("../img/logo.png");
+  background-size: cover;
+}
+
+header ul.menu {
+  height: 64px;
+  line-height: 64px;
+  margin: 0;
+  list-style: none;
+  float: right;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+header ul.menu li {
+  float: left;
+  margin: 2px 10px;
+}
+
+header ul.menu li a {
+  text-decoration: none;
+  color: #191919;
+  font-weight: 600;
+}
+
+header ul.menu li.active a {
+  color: #10c9c3;
+}
+
+header .content {
+  max-width: 500px;
+  float: right;
+  margin: 100px 20px;
+}
+
+header .content p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+}
+
+section {
+  overflow: hidden;
+}
+
+section.about {
+  padding: 100px 0;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+section.skills {
+  height: 500px;
+  text-transform: uppercase;
+}
+
+section.skills .left {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  padding: 100px 100px;
+  width: 50%;
+  float: left;
+  background-color: #f8f9f9;
+}
+
+section.skills .left ul {
+  list-style: none;
+}
+
+section.skills .left ul li {
+  padding-top: 30px;
+}
+
+section.skills .left ul li .bar {
+  background-color: #d8d8d8;
+  height: 3px;
+  width: 100%;
+}
+
+section.skills .left ul li .bar .tick {
+  background-color: #10c9c3;
+  height: 3px;
+}
+
+section.skills .left ul li .bar .tick.t0 {
+  width: 0%;
+}
+
+section.skills .left ul li .bar .tick.t5 {
+  width: 5%;
+}
+
+section.skills .left ul li .bar .tick.t10 {
+  width: 10%;
+}
+
+section.skills .left ul li .bar .tick.t15 {
+  width: 15%;
+}
+
+section.skills .left ul li .bar .tick.t20 {
+  width: 20%;
+}
+
+section.skills .left ul li .bar .tick.t25 {
+  width: 25%;
+}
+
+section.skills .left ul li .bar .tick.t30 {
+  width: 30%;
+}
+
+section.skills .left ul li .bar .tick.t35 {
+  width: 35%;
+}
+
+section.skills .left ul li .bar .tick.t40 {
+  width: 40%;
+}
+
+section.skills .left ul li .bar .tick.t45 {
+  width: 45%;
+}
+
+section.skills .left ul li .bar .tick.t50 {
+  width: 50%;
+}
+
+section.skills .left ul li .bar .tick.t55 {
+  width: 55%;
+}
+
+section.skills .left ul li .bar .tick.t60 {
+  width: 60%;
+}
+
+section.skills .left ul li .bar .tick.t65 {
+  width: 65%;
+}
+
+section.skills .left ul li .bar .tick.t70 {
+  width: 70%;
+}
+
+section.skills .left ul li .bar .tick.t75 {
+  width: 75%;
+}
+
+section.skills .left ul li .bar .tick.t80 {
+  width: 80%;
+}
+
+section.skills .left ul li .bar .tick.t85 {
+  width: 85%;
+}
+
+section.skills .left ul li .bar .tick.t90 {
+  width: 90%;
+}
+
+section.skills .left ul li .bar .tick.t95 {
+  width: 95%;
+}
+
+section.skills .left ul li .bar .tick.t100 {
+  width: 100%;
+}
+
+section.skills .right {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  float: right;
+  background-color: #585959;
+}
+
+section.totals {
+  background-color: #10c9c3;
+  padding: 60px 0;
+  color: #fff;
+}
+
+section.totals .columns span {
+  float: left;
+  margin-right: 15px;
+  font-size: 40px;
+  line-height: 64px;
+}
+
+section.totals .columns .number {
+  margin-top: 7px;
+  font-weight: bold;
+}
+
+section.totals .columns .description {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+section.works {
+  padding: 100px 0;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+section.works .player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e9e9e9;
+  height: 400px;
+}
+
+section.works .player a {
+  text-decoration: none;
+}
+
+section.contact {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+section.contact form input,
+section.contact form textarea {
+  width: 100%;
+  border: none;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.02);
+          box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.02);
+  padding: 10px 15px;
+  border-radius: 0;
+}
+
+section.contact form textarea {
+  resize: none;
+  min-height: 160px;
+}
+
+section h1 {
+  font-size: 38px;
+}
+
+section h2 {
+  font-size: 30px;
+  color: #191919;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+section h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+section p {
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  overflow-wrap: break-word;
+}
+
+section img {
+  width: 150px;
+}
+
+footer {
+  background-color: #141414;
+  padding: 60px 0;
+  color: #fff;
+}
+
+footer .columns:not(:first-child) {
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  color: #bcbcbc;
+  text-decoration: none;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+footer p {
+  font-size: 14px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #bcbcbc;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  section.skills .left {
+    width: 100%;
+  }
+  section.skills .right {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  section.skills .left {
+    padding: 100px 10px;
+  }
+  section.skills .right {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
